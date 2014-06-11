@@ -1,0 +1,273 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi primera Aplicacion Movil</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="principal" data-theme="b">
+	<div data-role="header">
+		<h1>FORMULARIO CALCULO DIFERENCIAL</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview"> 
+        <li data-role="list-divider" role="heading"> DERIVADAS </li>
+			<li><a href="#Ian" data-transition="pop">Derivadas Algebraicas</a></li>
+            <li><a href="#Paul" data-transition="slide">Derivadas Logaritmicas y Exponenciales</a></li>
+			<li><a href="#Nina" data-transition="flip">Derivadas de funciones Trigonometricas </a></li>
+		</ul>	
+        
+        <div data-role="content" align="justify">
+      DERIVADA <br>
+        <br>
+      En matemáticas, la derivada de una función es una medida de la rapidez con la que cambia el valor de dicha función matemática, según cambie el valor de su variable independiente. La derivada de una función es un concepto local, es decir, se calcula como el límite de la rapidez de cambio media de la función en un cierto intervalo, cuando el intervalo considerado para la variable independiente se torna cada vez más pequeño. Por ello se habla del valor de la derivada de una cierta función en un punto dado.
+
+Un ejemplo habitual aparece al estudiar el movimiento: si una función representa la posición de un objeto con respecto al tiempo, su derivada es la velocidad de dicho objeto. Un avión que realice un vuelo transatlántico de 4500 km en entre las 12:00 y las 18:00, viaja a una velocidad media de 750 km/h. Sin embargo, puede estar viajando a velocidades mayores o menores en distintos tramos de la ruta. En particular, si entre las 15:00 y las 15:30 recorre 400 km, su velocidad media en ese tramo es de 800 km/h. Para conocer su velocidad instantánea a las 15:20, por ejemplo, es necesario calcular la velocidad media en intervalos de tiempo cada vez menores alrededor de esta hora: entre las 15:15 y las 15:25, entre las 15:19 y las 15:21, etc.
+
+El valor de la derivada de una función en un punto puede interpretarse geométricamente, ya que se corresponde con la pendiente de la recta tangente a la gráfica de la función en dicho punto. La recta tangente es a su vez la gráfica de la mejor aproximación lineal de la función alrededor de dicho punto. La noción de derivada puede generalizarse para el caso de funciones de más de una variable con la derivada parcial y el diferencial.
+
+La derivada de una función f en un punto x se denota como f′(x). La función cuyo valor en cada punto x es esta derivada es la llamada función derivada de f, denotada por f′. El proceso de encontrar la derivada de una función se denomina diferenciación, y es una de las herramientas principales en el área de las matemáticas conocida como cálculo infinitesimal. Concretamente, el que trata de asuntos vinculados con la derivada se denomina cálculo diferencial.
+        <br>
+       
+        <a href="#mypop" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"> Profesor</a>
+        <div data-role="popup" id="mypop">
+        <p> Enrique Torres Molina </p>
+          
+        </div>	
+	</div>
+    
+    <div data-role="content">
+    	<div data-role="collapsible-set">
+        	<div data-role="collapsible" data-collapsed="true">
+            <h1> Calculo Diferencial </h1> <br>
+           <a href="#big" data-rel="popup" data-position-to="window">
+           <img src="imagenes/1.JPG" alt="Skaret View" style="width:100px;"> </a>
+           <div data-role="popup" id="big"> 
+           	<p> El cálculo diferencial es una parte del análisis matemático que consiste en el estudio de cómo cambian las funciones cuando sus variables cambian. El principal objeto de estudio en el cálculo diferencial es la derivada. Una noción estrechamente relacionada es la de diferencial de una función.
+
+El estudio del cambio de una función es de especial interés para el cálculo diferencial, en concreto el caso en el que el cambio de las variables es infinitesimal, esto es, cuando dicho cambio tiende a cero (se hace tan pequeño como se desee). Y es que el cálculo diferencial se apoya constantemente en el concepto básico del límite. El paso al límite es la principal herramienta que permite desarrollar la teoría del cálculo diferencial y la que lo diferencia claramente del álgebra.
+
+Desde el punto de vista matemático de las funciones y la geometría, la derivada de una función en un cierto punto es una medida de la tasa en la cual una función cambia conforme un argumento se modifica. Esto es, una derivada involucra, en términos matemáticos, una tasa de cambio. Una derivada es el cálculo de las pendientes instantáneas de f(x) en cada punto x. Esto se corresponde a las pendientes de las tangentes de la gráfica de dicha función en sus puntos (una tangente por punto); Las derivadas pueden ser utilizadas para conocer la concavidad de una función, sus intervalos de crecimiento, sus máximos y mínimos.
+
+La inversa de una derivada se llama primitiva, antiderivada o integral indefinida. </p>
+             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"> CLOSE </a> <img src="imagenes/1.JPG" style="width:800px; height:500px;" alt="Skared View"> 
+             </div>
+              </div>
+              </div>
+              </div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+         <ul>
+         <li>
+         <a href="#principal" data-transition="pop" data-icon="home"> INICIO </a>
+         </li>
+         <li>
+         <a href="#despertar" data-transition="slidedown"> Calculo Diferencial </a>
+         </li>
+         <li>
+         <a href="#conflicto" data-transition="pop" data-icon="alert"> Maximos y minimos </a>
+         </li>
+         </ul>
+         </div>
+	</div>
+</div>
+
+</div>
+
+
+<div data-role="page" id="Ian" data-theme="b">
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> Regresar </a>
+		<h1>Algebraicas</h1>
+	</div>
+	<div data-role="content" align="center"> 
+    <img src="imagenes/5.jpg" height="800"> <br> 
+    Algebraicas	
+		
+                <p> </p>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+    <div data-role="navbar" data-iconpos="top">
+         <ul>
+         <li>
+         <a href="#principal" data-transition="pop" data-icon="home"> INICIO </a>
+         </li>
+         <li>
+         <a href="#despertar" data-transition="slidedown"> Calculo Diferencial </a>
+         </li>
+         <li>
+         <a href="#conflicto" data-transition="pop" data-icon="alert"> Maximos y minimos </a>
+         </li>
+         </ul>
+         </div>
+		
+	</div>
+</div>
+
+<div data-role="page" id="Paul"  data-theme="b">
+	<div data-role="header">
+     <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> Regresar </a>
+		<h1>Derivadas Logaritmicas y Exponenciales</h1>
+	</div>
+	<div data-role="content" align="center">
+   <img src="imagenes/9.gif" height="600"> <br>	<img src="imagenes/10.gif" height="600">
+		Logaritmicas	
+        <p> </p>	
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+         <ul>
+         <li>
+         <a href="#principal" data-transition="pop" data-icon="home"> INICIO </a>
+         </li>
+         <li>
+         <a href="#despertar" data-transition="slidedown"> Calculo Diferencial </a>
+         </li>
+         <li>
+         <a href="#conflicto" data-transition="pop" data-icon="alert">  Maximos y minimos </a>
+         </li>
+         </ul>
+         </div>
+	</div>
+</div>
+
+<div data-role="page" id="Nina" data-theme="b">
+	<div data-role="header">
+     <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> Regresar </a>
+		<h1>Derivadas Trigonometricas</h1>
+	</div>
+	<div data-role="content" align="center">
+    <img src="imagenes/6.jpg" height="900"> <br> <img src="imagenes/7.jpg" height="900"> <br> <img src="imagenes/8.jpg" height="900"> <br>
+		Trigonometricas
+        <br>
+        	
+        <p></p>
+	</div>
+ <div data-role="footer" data-position="fixed">
+   <div data-role="navbar" data-iconpos="top">
+         <ul>
+         <li>
+         <a href="#principal" data-transition="pop" data-icon="home"> INICIO </a>
+         </li>
+         <li>
+         <a href="#despertar" data-transition="slidedown"> Calculo Diferencial </a>
+         </li>
+         <li>
+         <a href="#conflicto" data-transition="pop" data-icon="alert"> Maximos y minimos </a>
+         </li>
+         </ul>
+         </div>
+	</div>
+</div>
+</div> 
+
+<div data-role="page" id="despertar" data-theme="b">
+ <div data-role="header">
+  <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> Regresar </a>
+  <h1>Calculo diferencial</h1>
+ </div>
+ <div data-role="content" align="center">
+    <img src="imagenes/4.jpg" width="400" height="400"> <br>	
+		Calculo
+        <p>El cálculo diferencial es una parte del análisis matemático que consiste en el estudio de cómo cambian las funciones cuando sus variables cambian. El principal objeto de estudio en el cálculo diferencial es la derivada. Una noción estrechamente relacionada es la de diferencial de una función.
+
+El estudio del cambio de una función es de especial interés para el cálculo diferencial, en concreto el caso en el que el cambio de las variables es infinitesimal, esto es, cuando dicho cambio tiende a cero (se hace tan pequeño como se desee). Y es que el cálculo diferencial se apoya constantemente en el concepto básico del límite. El paso al límite es la principal herramienta que permite desarrollar la teoría del cálculo diferencial y la que lo diferencia claramente del álgebra.
+
+Desde el punto de vista matemático de las funciones y la geometría, la derivada de una función en un cierto punto es una medida de la tasa en la cual una función cambia conforme un argumento se modifica. Esto es, una derivada involucra, en términos matemáticos, una tasa de cambio. Una derivada es el cálculo de las pendientes instantáneas de f(x) en cada punto x. Esto se corresponde a las pendientes de las tangentes de la gráfica de dicha función en sus puntos (una tangente por punto); Las derivadas pueden ser utilizadas para conocer la concavidad de una función, sus intervalos de crecimiento, sus máximos y mínimos.
+
+La inversa de una derivada se llama primitiva, antiderivada o integral indefinida. <br> Una función de una variable es diferenciable en un punto x si su derivada existe en ese punto; una función es diferenciable en un intervalo si lo es en cada punto x perteneciente al intervalo. Si una función no es continua en c, entonces no puede ser diferenciable en c; sin embargo, aunque una función sea continua en c, puede no ser diferenciable. Es decir, toda función diferenciable en un punto c es continua en c, pero no toda función continua en c es diferenciable en c (como f(x) = |x| es continua pero no diferenciable en x = 0).
+
+Noción de derivada[editar]
+Artículo principal: Derivada
+
+
+Recta secante entre los puntos f(x+h) y f(x).
+Las derivadas se definen tomando el límite de la pendiente de las rectas secantes conforme se van aproximando a la recta tangente.
+
+Es difícil hallar directamente la pendiente de la recta tangente de una función porque sólo conocemos un punto de ésta, el punto donde ha de ser tangente a la función. Por ello, aproximaremos la recta tangente por rectas secantes. Cuando tomemos el límite de las pendientes de las secantes próximas, obtendremos la pendiente de la recta tangente.
+
+Para obtener estas pendientes, tomemos un número arbitrariamente pequeño que llamaremos h. h representa una pequeña variación en x, y puede ser tanto positivo como negativo. La pendiente de la recta entre los puntos \scriptstyle (x, f(x))\, y \scriptstyle (x+h, f(x+h))\, es
+
+f(x+h)-f(x)\over h
+Esta expresión es un cociente diferencial de Newton. La derivada de f en x es el límite del valor del cociente diferencial conforme las líneas secantes se acercan más a la tangente:
+
+f'(x)=\lim_{h\to 0}{f(x+h)-f(x)\over h}
+Si la derivada de f existe en cada punto x, podemos definir la derivada de f como la función cuyo valor en el punto x es la derivada de f en x.
+
+Puesto que la inmediata sustitución de h por 0 da como resultado una división por cero, calcular la derivada directamente puede ser poco intuitivo. Una técnica es simplificar el numerador de modo que la h del denominador pueda ser cancelada. Esto resulta muy sencillo con funciones polinómicas, pero para la mayoría de las funciones resulta demasiado complicado. Afortunadamente, hay reglas generales que facilitan la diferenciación de la mayoría de las funciones descritas.</p>
+	</div>
+ <div data-role="footer" data-position="fixed">
+   <div data-role="navbar" data-iconpos="top">
+         <ul>
+         <li>
+         <a href="#principal" data-transition="pop" data-icon="home"> INICIO </a>
+         </li>
+         <li>
+         <a href="#despertar" data-transition="slidedown"> Calculo Diferencial </a>
+         </li>
+         <li>
+         <a href="#conflicto" data-transition="pop" data-icon="alert"> Maximos y minimos </a>
+         </li>
+         </ul>
+         </div>
+	</div>
+</div>
+</div>   
+
+ <div data-role="page" id="conflicto" data-theme="b">
+ <div data-role="header">
+  <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> Regresar </a>
+  <h1>Maximos y minimos</h1>
+ </div>
+ <div data-role="content" align="center">
+    <img src="imagenes/11.png" width="400" height="400"> <br>  <img src="imagenes/12.png" width="400" height="400">	
+			
+        <p>MAXIMOS Y MINIMOS RELATIVOS
+
+Con cierta frecuencia nos encontramos con la necesidad de buscar la mejor forma de hacer algo. En muchas ocasiones a través de los poderosos mecanismos de cálculo diferencial es posible encontrar respuesta a estos problemas, que de otro modo parecería imposible su solución.
+
+Entre los valores q puede tener una función (Y) puede haber uno que sea el mas grande y otro que sea el mas pequeño. A estos valores se les llama respectivamente punto máximo y punto mínimo absolutos.
+
+Si una función continua es ascendente en un intervalo y a partir de un punto cualquiera empieza a decrecer, a ese punto se le conoce como punto critico máximo relativo, aunque comúnmente se le llama solo máximo.
+
+Por el contrario, si una funcion continua es decreciente en cierto intervalo hasta un punto en el cual empieza a ascender, a este punto lo llamamos puntro critico minimo relativo, o simplemente minimo.
+
+Una funcion puede tener uno, ninguno o varios puntos criticos.
+
+Curva sin máximos ni mínimos función sin máximos ni mínimos <br> Función con un máximo curva con un máximo y un mínimo
+
+Curva con un mínimo curva con varios mínimos y máximos
+
+La pendiente de la recta tangente a una curva (derivada) en los puntos críticos máximos y mínimos relativos es cero, ya que se trata de una recta horizontal.
+
+En los puntos críticos máximos, las funciones tienen un valor mayor que en su entorno, mientras que en los mínimos, el valor de la función es menor que en su entorno.
+
+En un punto critico maximo relativo, al pasar la funcion de creciente a decreciente, su derivada pasa de positiva a negativa.
+
+En un punto critico minimo relativo, la funcion deja de decrecer y empieza a ser creciente, por tanto, su derivada pasa de negativa a positiva.</p>
+	</div>
+ <div data-role="footer" data-position="fixed">
+   <div data-role="navbar" data-iconpos="top">
+         <ul>
+         <li>
+         <a href="#principal" data-transition="pop" data-icon="home"> INICIO </a>
+         </li>
+         <li>
+         <a href="#despertar" data-transition="slidedown"> Calculo Diferencial </a>
+         </li>
+         <li>
+         <a href="#conflicto" data-transition="pop" data-icon="alert"> Maximos y minimos </a>
+         </li>
+         </ul>
+         </div>
+	</div>
+</div>
+</div>    
+
+</body>
+</html>
